@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Product quality Increment/Decrement</title>
 </head>
 
@@ -23,8 +26,8 @@
     <script>
         function QuantityHandler(action)
         {
-             const QuantitElement = document.getElementById("count-value")
-             let Quantity = parseInt(QuantitElement.innerText);
+             const QuantityElement = document.getElementById("count-value")
+             let Quantity = parseInt(QuantityElement.innerText);
              if(Quantity ==1 && action== "dec")
              {
                         alert(`Quantity cannot be less than "1"`)
@@ -34,7 +37,7 @@
                 alert(`Quantity cannot be more than "10"`)
 
              }
-             QuantitElement.innerText= action == "inc" ? ++Quantity : --Quantity;
+             QuantityElement.innerText= action == "inc" ? ++Quantity : --Quantity;
         }
     </script>
 </body>
